@@ -1,9 +1,18 @@
 import discord
+import json
 from discord.ext import commands
 from antispam import AntiSpamHandler
 
 intents = discord.Intents.default()
 intents.members = True
+
+ 
+def load():
+    with open("database/json/bot_config.json", "r") as file:
+        return json.load(file)
+
+
+data = load()
 
 client = commands.Bot(command_prefix=data["prefix"], intents=intents)
 
@@ -24,3 +33,6 @@ client.handler = AntiSpamHandler(client, warn_threshold=5, kick_threshold=8,mess
 async def on_message(message):
     await client.handler.propagate(message)
     await client.process_commands(message)
+    
+    
+client.run(data["token"])
