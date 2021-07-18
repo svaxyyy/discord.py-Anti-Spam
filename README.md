@@ -1,7 +1,8 @@
 # discord.py-Anti-Spam
-This is not the full customized module! For Questions dm Svaxyy#0859 on discord. This code warns a guy if he spams 5 messages and on 8 warings he is getting kicket
+This is not the full customized module! For Questions dm Svaxyy#0859 on discord. This code warns a guy if he spams 5 messages and on 8 warings he is getting kicked
 
-# Please leave a reaction on Discord that would be nice!✅ / 🆗
+# Please leave a reaction on Discord that would be nice!
+- ✅ / 🆗
 
 # Module based!
  This Project is only to show guys the project with a code example which is more expanded than the preview of the module!
